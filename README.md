@@ -29,32 +29,6 @@ The notebooks are written in the order they should be run.
    - Covers time x geography x demand, geography x payment x revenue, distance x duration x total amount, month x hour x borough, CBD fee pre/post Jan 5, revenue concentration, and efficiency/outlier patterns.
    - Keeps the charts and tables inside the notebook, like the other EDA notebooks.
 
-## Data Files
-
-The raw trip files are in `Data/`:
-
-- `yellow_tripdata_2025-01.parquet`
-- `yellow_tripdata_2025-02.parquet`
-- `yellow_tripdata_2025-03.parquet`
-
-Taxi zone metadata:
-
-- `Data/NYC_Taxi_Zones.csv`
-- `Data/taxi_zone_lookup.csv`
-
-The main analytical parquet is intentionally ignored by Git because it is large:
-
-- `Data/processed/analytical/analytical.parquet`
-
-If it is missing, rerun `02_feature_engineering.ipynb`.
-
-## Outputs
-
-The project does not save separate chart/table output folders right now. The charts and summary tables are kept inside the notebooks to avoid having only one notebook generate external files while the others do not.
-
-The only generated data artifact is the analytical parquet:
-
-- `Data/processed/analytical/analytical.parquet`
 
 ## How to Run
 
