@@ -78,17 +78,4 @@ The EDA notebooks expect `Data/processed/analytical/analytical.parquet` to exist
 
 ## Notes
 
-- This is a descriptive BI project, not a machine learning project.
-- Some records still have suspicious values, like negative fares, extreme distances, or unusual payment codes. The notebooks flag and discuss these instead of hiding them.
 - The CBD congestion fee starts to matter after January 5, 2025, so the multivariate notebook treats that as a separate business topic.
-- The large analytical parquet stays local and should not be committed.
-
-## What to Use in the Final Submission
-
-Good final-report material will likely come from:
-
-- KPI summary from `03_univariate_eda.ipynb`
-- Trip volume trends from `03_univariate_eda.ipynb`
-- Geography and revenue charts from `04_bivariate_eda.ipynb`
-- CBD pre/post analysis from `05_multivariate_eda.ipynb`
-- Revenue concentration visuals from `05_multivariate_eda.ipynb`
