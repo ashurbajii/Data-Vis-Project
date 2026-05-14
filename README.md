@@ -12,6 +12,7 @@ The notebooks are written in the order they should be run.
 
 2. `02_feature_engineering.ipynb`
    - Builds the analytical dataset.
+   - Uses `Data/project_master_clean.parquet` as the taxi trip input.
    - Adds useful fields like pickup hour, pickup day, pickup month, trip duration, tip percent, average speed, pickup/dropoff boroughs, zones, service zones, and CBD period.
    - Saves the main analytical file locally as:
      `Data/processed/analytical/analytical.parquet`
@@ -38,7 +39,7 @@ Use the project virtual environment if available:
 .\.venv\Scripts\python.exe
 ```
 
-Open the notebooks in Jupyter or VS Code and run them in this order:
+Open the notebooks in Jupyter and run them in this order:
 
 ```text
 Pre-Process.ipynb
@@ -48,7 +49,7 @@ Pre-Process.ipynb
 05_multivariate_eda.ipynb
 ```
 
-The EDA notebooks expect `Data/processed/analytical/analytical.parquet` to exist.
+The feature engineering notebook expects `Data/project_master_clean.parquet` to exist. The EDA notebooks expect `Data/processed/analytical/analytical.parquet` to exist.
 
 ## Notes
 
